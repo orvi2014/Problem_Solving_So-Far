@@ -1,0 +1,28 @@
+// Uva 11727 - Cost Cutting
+// Author= Robat Das Orvi
+
+import java.util.SCanner;
+public class cost{
+  public static void main(String[]args){
+  Scanner k=new Scanner(System.in);
+  int testcase=k.nextInt();
+  while (testcase--){
+    int a=k.nextInt();
+    int b=k.nextInt();
+    int c=k.nextInt();
+    if (a>=1000 && a<=10000 && b>=1000 && b<=10000 && c<=1000 && c<=10000){
+      if((a>b && b<c) || (b>a && b<c) ){
+         System.out.println(b);
+      }
+      else if((a>b && b>c) || (b<a && b>c)){
+      System.out.println(c);
+      }
+      else
+      {
+      System.out.println(a);}
+    }
+  
+  }
+  }
+
+}

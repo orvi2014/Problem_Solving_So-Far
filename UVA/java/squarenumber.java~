@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class squarenumber{
+  public static void main(String[]args){
+  Scanner k=new Scanner(System.in);
+  int n=k.nextInt();
+ 
+  for(int i=0;i<=n; i++){
+  int a=k.nextInt();
+  int b=k.nextInt();
+  if(a==0 && b==0){
+  break;}
+  int count=0;
+  if(a>0 && a<=b && b<=100000)
+                {
+                    for(int i=a; i<=b; i++)
+                    {
+                        int st=(int)Math.sqrt(i);
+                        if(st*st==i)
+                        {
+                            cout++;
+                        }
+                    }
+                }
+                System.out.println(cout);
+  
+  }
+  
+  
+  }
+}
